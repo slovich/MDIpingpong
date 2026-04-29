@@ -17,23 +17,27 @@ A aplicação compõe a 2ª nota da disciplina, servindo como exemplo prático d
 * Raniere Mendes dos Santos
 * Tereza Clarice da Silva Rocha
 
-* ⚙️ Funcionalidade
+⚙️ Funcionalidade
+
 Interface gráfica simples e intuitiva para envio e recebimento de mensagens.
 Cada instância da aplicação corresponde a um processo MPI distinto.
 Implementação do algoritmo Ping-Pong para troca de mensagens entre processos.
 Exibição das mensagens enviadas e recebidas em tempo real na interface.
 
 🚀 Execução
+
 Pré-requisitos
-Windows 10 ou superior
-Microsoft MPI (MSMPI) instalado
+
+* Windows 10 ou superior
+* Microsoft MPI (MSMPI) instalado
 
 Como executar
-Compile o projeto em modo Release.
-No prompt de comando, execute:
+
+* Compile o projeto em modo Release.
+* No prompt de comando, execute:
 <code> mpiexec -n 2 ./pingpong.exe </code>
-O parâmetro -n 2 indica que serão abertas duas instâncias da aplicação.
-É possível alterar para -n 3, -n 4, etc., para abrir mais processos.
+* O parâmetro -n 2 indica que serão abertas duas instâncias da aplicação.
+* É possível alterar para -n 3, -n 4, etc., para abrir mais processos.
 
 Aprendizado
 Este projeto reforça conceitos fundamentais de sistemas distribuídos, como:
