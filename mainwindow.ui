@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>328</width>
     <height>491</height>
    </rect>
   </property>
@@ -24,9 +24,9 @@
      </rect>
     </property>
     <property name="title">
-     <string>Usuário 1</string>
+     <string/>
     </property>
-    <widget class="QLineEdit" name="lineEdit_usuario1">
+    <widget class="QLineEdit" name="lineEdit">
      <property name="geometry">
       <rect>
        <x>25</x>
@@ -36,7 +36,7 @@
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_usuario1">
+    <widget class="QPushButton" name="pushButton">
      <property name="geometry">
       <rect>
        <x>25</x>
@@ -48,8 +48,12 @@
      <property name="text">
       <string>ENVIAR</string>
      </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/resource/img/send-mail.png</normaloff>:/resource/img/send-mail.png</iconset>
+     </property>
     </widget>
-    <widget class="QTextEdit" name="textEdit_usuario1">
+    <widget class="QTextEdit" name="textEdit">
      <property name="geometry">
       <rect>
        <x>25</x>
@@ -57,62 +61,16 @@
        <width>250</width>
        <height>300</height>
       </rect>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>460</x>
-      <y>60</y>
-      <width>300</width>
-      <height>400</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Usuário 2</string>
-    </property>
-    <widget class="QTextEdit" name="textEdit_usuario2">
-     <property name="geometry">
-      <rect>
-       <x>25</x>
-       <y>25</y>
-       <width>250</width>
-       <height>300</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="lineEdit_usuario2">
-     <property name="geometry">
-      <rect>
-       <x>25</x>
-       <y>340</y>
-       <width>250</width>
-       <height>22</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_usuario2">
-     <property name="geometry">
-      <rect>
-       <x>25</x>
-       <y>370</y>
-       <width>250</width>
-       <height>24</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>ENVIAR</string>
      </property>
     </widget>
    </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
-      <y>170</y>
-      <width>111</width>
-      <height>101</height>
+      <x>280</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
      </rect>
     </property>
     <property name="text">
@@ -128,7 +86,7 @@
    <widget class="QLabel" name="label_mdi1">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>10</x>
       <y>10</y>
       <width>181</width>
       <height>41</height>
@@ -144,7 +102,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>328</width>
      <height>22</height>
     </rect>
    </property>

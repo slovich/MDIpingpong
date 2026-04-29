@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>resource/img/g2.png</file>
+        <file>resource/img/send-mail.png</file>
     </qresource>
 </RCC>

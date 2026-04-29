@@ -10,6 +10,7 @@ public:
     ~MPIPingPong();
 
     void sendMessage(const std::string& msg);
+    std::string tryReceiveMessage();
     std::string receiveMessage();
 
     int getRank() const;

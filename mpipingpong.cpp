@@ -16,6 +16,18 @@ void MPIPingPong::sendMessage(const std::string& msg) {
     MPI_Send(msg.c_str(), msg.size() + 1, MPI_CHAR, target, 0, MPI_COMM_WORLD);
 }
 
+std::string MPIPingPong::tryReceiveMessage() {
+    int flag;
+    MPI_Status status;
+    MPI_Iprobe(MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &flag, &status);
+    if (flag) {
+        char buffer[256];
+        MPI_Recv(buffer, 256, MPI_CHAR, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &status);
+        return std::string(buffer);
+    }
+    return "";
+}
+
 std::string MPIPingPong::receiveMessage() {
     char buffer[256];
     MPI_Recv(buffer, 256, MPI_CHAR, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
